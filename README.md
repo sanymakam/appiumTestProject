@@ -4,7 +4,7 @@ This project contains end to end solution to mobile automation needs.
 # Solutions 
 1. Parellel run - Supports 3 threads 
       - Automatically checks the connected devices on system and saves them in queue(thread safe), picks a device and assign it to test and removes from the queue so that it is not available for other tests. Returns the mobile device back to queue after the test execution.
-      - Make sure 3 emulators/devices available.
+      - Make sure number of emulators/devices available is equal to the thread count mentioned in build.gradle file.
       - Thread count can be changed from build.gradle file
 2. Reporting - Supports testng and extent reports.
 3. Screenshots - In case of failure screenshots will be captured and placed under TestReport/screenshots folder.
